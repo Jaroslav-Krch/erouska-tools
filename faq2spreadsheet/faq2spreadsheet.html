@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="cs" />
+    <meta name="author" content="With love Jarda (jaroslav.krch@gmail.com)">
+    <title>eRouška FAQ do spreadsheet formátu</title>
+    <meta name="robots" content="noindex,follow" />
+    <link rel="stylesheet" href="faq2spreadsheet.css">
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+
+    <script src="faq2spreadsheet.js" ></script>
+  </head>
+  <body>
+    <div class="header">
+      Převede eRouška FAQ z web.json a faq.json do spreadsheet formátu
+    </div>
+    <div class="board">
+      <div class="container">
+        <div>
+          Program automaticky stáhne ~/web.json a ~/assets/faq.json z eRouška master repository na GitHubu a převede na spreadsheet format. <a href="https://github.com/covid19cz/erouska-homepage/tree/master" target="_blank" >https://github.com/covid19cz/erouska-homepage/tree/master</a>
+        </div>
+        <div>
+          Odpověď na více řádků (copy/paste)
+          <textarea id="output"></textarea>
+        </div>
+        <div>
+          Co řádek to Otázka a Odpvěď (copy/paste)
+          <textarea id="output2"></textarea>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="fotter">
+      <span style="position:absolute;right:5px;">With Love Jarda (jaroslav.krch@gmail.com)</span>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="cs" />
+    <meta name="author" content="With love Jarda Krch (jaroslav.krch@gmail.com)">
+    <title>Experimentální FAQ Generátor</title>
+    <meta name="robots" content="noindex,follow" />
+    <link rel="stylesheet" href="faqgen.css">
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+
+    <script src="faqgen.js" ></script>
+  </head>
+  <body>
+    <div class="header">
+        Experimentální Generárot FAQ pro eRouška.cz 
+    </div>
+    <div class="board">
+      <div class="container">
+        <div>
+          Copy paste otázky včetně nadpisu a odpovědi z google doc<br>
+          Otázka bude první řádek, odpověd vše ostatní, ideálně paragrafy či seznam (možno vložit odkaz a zakladní formátování textu: tučně, kurzíva, podtženo, přešktrtnuto, dolní a horní index)
+          <div id="htmlIn" contenteditable="" ></div>
+        </div>
+        <div>
+          ID otázky anglicky: výstižný popis např:<br><em>does_it_make_sense_to_install_erouska</em>
+          <input id="codeIn" type="text" value="">
+          Text kotvy pro přímí odkaz česky: kratší lepší, např:<br><em>proc-instalovat</em>
+          <input id="anchorIn" type="text" value="">
+          <button id="parseHtml">Generovat</button>
+        </div>
+        <div>
+          Záznamy do ~/web.json
+          <textarea id="webJsonOut"></textarea>
+          Záznam do ~/assets/faq.json
+          <textarea id="faqJsonOut"></textarea>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="fotter">
+        
+    </div>
+  </body>
+</html>
